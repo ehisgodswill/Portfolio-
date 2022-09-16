@@ -3,7 +3,7 @@ HTML, BODY {
 }
 
 BODY {
-  background: hsl(200deg, 70%, 11%);
+  background: #00071c;
   background-size: 0.12em 100%;
   font: 16em/1 Arial;
 }
@@ -23,7 +23,7 @@ svg {
   stroke: white;
   stroke-dasharray: 7% 28%;
   stroke-width: 3px;
-  animation: stroke-offset 9s 1 linear;
+  animation: stroke-offset 5s 1 linear;
 }
 .text-copy:nth-child(1) {
   stroke: #0bc53d;

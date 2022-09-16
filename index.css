@@ -1,26 +1,32 @@
+/* lets use css variables for bg */
+:root{
+  --bgcolor: hsl(200deg, 70%, 11%);
+}
 HTML, BODY {
   height: 100%;
+  background-color: var(--bgcolor);
+  margin: 0;
+  padding: 0;
 }
 
-BODY {
-  background: #00071c;
-  background-size: 0.12em 100%;
-  font: 16em/1 Arial;
-}
 
 .text--line {
   font-size: 0.5em;
 }
 
-svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+#welcome {
+  background: var(--bgcolor);
+  background-size: 0.12em 100%;
+  font: 16em/1 Arial;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 700;
 }
 
 .text-copy {
   fill: none;
-  stroke: white;
+  stroke: rgb(18, 18, 18);
   stroke-dasharray: 7% 28%;
   stroke-width: 3px;
   animation: stroke-offset 5s 1 linear;
@@ -38,7 +44,7 @@ svg {
   stroke-dashoffset: 21%;
 }
 .text-copy:nth-child(4) {
-  stroke: #EFEAC5;
+  stroke: #0da17e;
   stroke-dashoffset: 28%;
 }
 .text-copy:nth-child(5) {
@@ -52,6 +58,9 @@ svg {
     stroke-dasharray: 0 87.5%;
   }
 }
+/* avoid using general selectors like this tag names ul ,
+for specific design
+ add a class name or id, or combinators */
 ol {
   list-style-type: decimal-leading-zero;
 }
@@ -64,6 +73,7 @@ ol {
 .navbar-nav li{
   display: inline-block;
 }
+
 ul {
   list-style-type: square;
   color: rgb(5, 66, 66);
@@ -74,7 +84,7 @@ ol li {
   margin-left: 35px;
 }
 button[type=button] {
-  background-color:  hsl(200deg, 70%, 11%);
+  background-color:  var(--bgcolor);
   border: aqua 2px solid;
   color: black;
   font-weight: bold;
@@ -85,3 +95,5 @@ button[type=button] {
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
+/* more work is meant to be done, but its best to seperate work component by component
+finish styling for ecample navbar b4 moving to another part */

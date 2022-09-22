@@ -61,7 +61,7 @@ HTML, BODY {
 /* avoid using general selectors like this tag names ul ,
 for specific design
  add a class name or id, or combinators */
-ol {
+.navbar {
   list-style-type: decimal-leading-zero;
 }
 .navbar-nav {
@@ -72,17 +72,14 @@ ol {
 }
 .navbar-nav li{
   display: inline-block;
+  margin-left: 35px;
 }
 
-ul {
+.list {
   list-style-type: square;
   color: rgb(5, 66, 66);
 }
 
-ol li {
-  
-  margin-left: 35px;
-}
 button[type=button] {
   background-color:  var(--bgcolor);
   border: aqua 2px solid;

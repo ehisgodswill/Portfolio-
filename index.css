@@ -3,12 +3,17 @@
   --bgcolor: hsl(200deg, 70%, 11%);
 }
 HTML, BODY {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
   background-color: var(--bgcolor);
   margin: 0;
   padding: 0;
 }
-
+#main{
+  display: none;
+  flex-direction: column;
+  
+}
 
 .text--line {
   font-size: 0.5em;

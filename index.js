@@ -1,4 +1,9 @@
 const welcome= document.getElementById('welcome');
-setTimeout(()=>welcome.style.display='none', 6000)
+const main = document.getElementById('main');
+main.style.display = 'none'
+setTimeout(()=>{
+    welcome.style.display='none';
+    main.style.display = 'flex'
+}, 6000)
 
 //above code to hide the welcome page

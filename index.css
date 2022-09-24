@@ -58,28 +58,36 @@ HTML, BODY {
     stroke-dasharray: 0 87.5%;
   }
 }
-/* avoid using general selectors like this tag names ul ,
-for specific design
- add a class name or id, or combinators */
-.navbar {
-  list-style-type: decimal-leading-zero;
+/*header code*/
+
+header{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #010311;
+  padding:0.5px;
+  text-align: left;
+  border-bottom: 1px solid #00c2cb;
 }
-.navbar-nav {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
+header nav a {
+  padding: 7px 15px;
+  color: #e0ffff;
+  border-radius: 5px;
+  letter-spacing: 0;
+}
+
+header nav a:hover, header nav a.active{
+  background: #00c2cb;
+  color: #42455a;
+  transition: 0.5s ease-out;
+  letter-spacing: 0.5px;
 }
 .navbar-nav li{
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 0px;
 }
-
-.list {
-  list-style-type: square;
-  color: rgb(5, 66, 66);
-}
-
 button[type=button] {
   background-color:  var(--bgcolor);
   border: aqua 2px solid;
@@ -91,6 +99,19 @@ button[type=button] {
   margin-left: 500px;
   cursor: pointer;
 }
+/* avoid using general selectors like this tag names ul ,
+for specific design
+ add a class name or id, or combinators */
+
+
+.li {
+  list-style-type: square;
+  color: rgb(5, 66, 66);
+}
+.navbar {
+  list-style-type: decimal-leading-zero;
+}
+
 /*# sourceMappingURL=index.css.map */
 /* more work is meant to be done, but its best to seperate work component by component
 finish styling for ecample navbar b4 moving to another part */
